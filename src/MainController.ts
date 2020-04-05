@@ -12,6 +12,8 @@ export class Controller {
   }
 
   public routes() {
-		this.app.route('/').get(this.typistService.welcomeMessage);
+    this.app.route('/').get(this.typistService.welcomeMessage);
+    this.app.route("/logs").get(this.typistService.getAllLogs);
+    this.app.route("/add/log").post(this.typistService.addNewLog);
   }
 }
