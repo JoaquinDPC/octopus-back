@@ -1,10 +1,10 @@
-import mongoose from "mongoose";
+import { Schema, model } from "mongoose";
 
-const LogSchema = new mongoose.Schema({
-  id: Number,
+const LogSchema = new Schema({
+  id: Number, // { type: string, requeried: true }
   level: String,
 	message: String,
 	timeStampt: Date
 });
 
-export const Log = mongoose.model("Log", LogSchema);
+export const Log = model("Log", LogSchema);
