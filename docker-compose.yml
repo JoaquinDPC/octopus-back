@@ -6,8 +6,8 @@ services:
     image: mongo:latest
     restart: always
     volumes:
-      - ./TypistData:/data/db
+      - ./FlareData:/data/db
     environment:
-      - MONGO_INITDB_DATABASE= Typist
+      - MONGO_INITDB_DATABASE= Flare
     ports:
       - 27017:27017
