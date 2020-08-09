@@ -3,14 +3,12 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
 
-import { LoggerController } from './controller/LoggerController';
 import { GeneralController } from './controller/GeneralController';
 import { MONGO_URL } from './constants/constants';
 
 
 class App {
   public app: Application;
-  public loggerController: LoggerController;
   public generalController: GeneralController;
 
   constructor() {
@@ -18,7 +16,6 @@ class App {
     this.setConfig();
     this.setMongoConfig();
 
-    this.loggerController = new LoggerController(this.app);
     this.generalController = new GeneralController(this.app);
   };
 
