@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "git push https://JoaquinDPC:9d198619@github.com/JoaquinDPC/octopus-back.git",
     "start": "nodemon"
   },
   "author": "Joaquin Del Prado",

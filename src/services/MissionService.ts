@@ -3,10 +3,10 @@ import { Request, Response } from "express";
 import { MongooseDocument } from 'mongoose';
 
 // Interfaces
-import { IRule } from '../interfaces/mainInterfaces'
+import { IRule } from '../interfaces/mainInterfaces';
 
-// Services
-import { Rule } from "../models/Rule";
+// Models
+import { Mission } from "../models/Mission";
 
 
 export default class RuleService {
